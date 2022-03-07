@@ -9,3 +9,21 @@ Exercise 2
   Hint: try searching for setInterval.
 
 */
+
+// function changeBackgroundColor() {
+//   let backgroundBody = document.querySelector("body");
+// }
+
+// setTimeout(() => {
+//   changeBackgroundColor(), 2000;
+// });
+
+let contentColor = document.body;
+
+setInterval(() => {
+  var x = Math.floor(Math.random() * 256);
+  var y = Math.floor(Math.random() * 256);
+  var z = Math.floor(Math.random() * 256);
+  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  contentColor.style.backgroundColor = bgColor;
+}, 1000);

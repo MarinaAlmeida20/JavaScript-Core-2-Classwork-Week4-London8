@@ -21,3 +21,23 @@ const greekGods = [
   "Poseidon",
   "Zeus",
 ];
+
+// function godsNames() {
+//   greekGods.forEach((element, index) => {
+//     console.log(`${index}. ${element}`);
+//   });
+// }
+
+function godsNames() {
+  greekGods.forEach((element, index) => {
+    if (index === 2) {
+      setTimeout(() => {
+        console.log(`${index}. ${element}`);
+      }, 2000);
+    } else {
+      console.log(`${index}. ${element}`);
+    }
+  });
+}
+
+godsNames();
